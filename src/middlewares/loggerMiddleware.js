@@ -3,7 +3,7 @@ export const logger = (req, res, next) => {
     const rota = req.url;
     const data = new Date().toISOString();
 
-    console.log(`${metodo} / ${rota} - ${data} `)
+    console.log(`/${metodo} - ${rota} - ${data} `)
 
     next();
 }
